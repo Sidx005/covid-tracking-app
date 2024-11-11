@@ -1,0 +1,114 @@
+@import url(https://db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik+Regular);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.aeonik{
+  font-family: "Aeonik Regular";
+  background: linear-gradient(to bottom,#ffffff,#531fff);
+  background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  color: transparent;
+
+}
+body{
+  /* position: relative; */
+  background-color: #000;
+      overflow-x: hidden;
+
+}
+a:hover{
+  color: #948a8a;
+}
+::-webkit-scrollbar{
+    background-color: rgb(52, 50, 50);
+
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(219, 214, 214);
+    border-radius: 10px;
+
+
+}
+a{
+  border-bottom: 0px;
+  transition: border-bottom 0.3s ease-in-out;
+
+}
+.nav a.active{
+  transition: border-bottom 0.5s ease-in-out;
+  border-bottom: 2px solid rgb(60, 24, 152);  color: #fff;
+}
+.vertical a.active{
+background-color: #000;
+color: #fff;
+}
+.profile {
+  background-image: linear-gradient(to bottom, #1b0942, rgb(72, 28, 104));
+  border-radius: 5px;
+}
+
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .slider-track {
+    display: flex;
+    width: calc(100%*2); 
+    animation: slide 5s linear infinite;
+  }
+  
+  /* Individual slide styling */
+  .slide {
+    flex: 0 0 25%; /* Each slide takes up 25% of the track width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set height based on your design */
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .slider-track:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  
+  /* Keyframes for infinite slide animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Move by half the width of the track */
+    }
+  }
+  
+  .account{
+    margin: 0 auto;
+  }
+  .siginDiv{
+    width: 100%;
+  height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
